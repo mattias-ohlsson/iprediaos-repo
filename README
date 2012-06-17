@@ -1,0 +1,4 @@
+IprediaOS RPM Repository
+
+Target: mirrors pub directory
+Create: createrepo iprediaos/linux/releases/1/Everything/i386/os/
