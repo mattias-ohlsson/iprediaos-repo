@@ -1,0 +1,5 @@
+#!/bin/bash
+
+createrepo iprediaos/linux/releases/1/Everything/i386/os/
+rpm --addsign iprediaos/linux/releases/1/Everything/i386/os/
+./make-git-push
