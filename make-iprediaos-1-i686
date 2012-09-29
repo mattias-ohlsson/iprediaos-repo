@@ -1,8 +1,9 @@
 #!/bin/bash
 
 echo "RPM addsign"
-rpm --addsign iprediaos/linux/releases/1/Everything/i386/os/* iprediaos/linux/updates/1/i386/* iprediaos/linux/updates/testing/1/i386/*
+rpm --addsign iprediaos/linux/releases/1/Everything/i386/os/* iprediaos/linux/updates/1/i386/* iprediaos/linux/updates/testing/1/i386/* iprediaos/linux/updates/1/i386/debug/*
 createrepo iprediaos/linux/releases/1/Everything/i386/os/
 createrepo iprediaos/linux/updates/1/i386/
+createrepo iprediaos/linux/updates/1/i386/debug
 createrepo iprediaos/linux/updates/testing/1/i386/
 ./make-git-push
