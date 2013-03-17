@@ -7,6 +7,6 @@ createrepo iprediaos/linux/releases/1/Everything/i386/os/
 createrepo iprediaos/linux/releases/1/Everything/i386/debug
 createrepo iprediaos/linux/updates/1/i386/
 createrepo iprediaos/linux/updates/1/i386/debug
-createrepo --deltas iprediaos/linux/updates/testing/1/i386/
+createrepo --deltas --oldpackagedirs=iprediaos/linux/releases/1/Everything/i386/os/ iprediaos/linux/updates/testing/1/i386/
 createrepo iprediaos/linux/updates/testing/1/SRPMS/
 ./make-git-push
